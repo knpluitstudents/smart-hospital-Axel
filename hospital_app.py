@@ -88,7 +88,7 @@ DEPT_INFO = {
 # ── Hero Header ───────────────────────────────────────────────────────────────
 st.markdown("""
 <!-- COLOR1 -->
-<div style="background:linear-gradient(135deg,#f60606 0%,#4fff0a 60%,#c10cdd 100%);
+<div style="background:linear-gradient(135deg,hsl(215, 95%, 49%) 0%,#0a33ff 60%,#390cdd 100%);
             padding:3rem 2rem 2.5rem;margin:-1rem -1rem 2rem;text-align:center;">
     <div style="font-size:14px;font-weight:500;color:rgba(255,255,255,0.7);
                 text-transform:uppercase;letter-spacing:0.1em;margin-bottom:12px;">
@@ -261,7 +261,7 @@ if submitted:
     st.markdown("---")
     st.markdown("""
     <div style="font-size:22px;font-weight:700;color:#111827;margin-bottom:4px;">CODENO28</div>
-    <div style="font-size:14px;color:#6b7280;margin-bottom:1.5rem;">CODENO29</div>
+    <div style="font-size:14px;color:#6b7280;margin-bottom:1.5rem;">Based on the information you provided</div>
     """, unsafe_allow_html=True)
 
     res_col, prob_col = st.columns([3, 2])
@@ -289,7 +289,7 @@ if submitted:
             {steps_html}
             <div style="margin-top:20px;padding:12px 16px;background:rgba(0,0,0,0.05);
                         border-radius:10px;font-size:12px;color:#6b7280;line-height:1.5;">
-                ⚠️ CODENO30
+                ⚠️ This is an AI suggestion, not a medical diagnosis. Please consult a doctor for further evaluation.
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -298,7 +298,7 @@ if submitted:
         st.markdown(f"""
         <div style="background:white;border:1px solid #e5e7eb;border-radius:16px;padding:24px;">
             <div style="font-size:14px;font-weight:600;color:#111827;margin-bottom:16px;">
-                CODENO31
+                Confidence by department
             </div>
         """, unsafe_allow_html=True)
 
